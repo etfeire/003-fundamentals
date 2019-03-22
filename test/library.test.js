@@ -35,6 +35,6 @@ test("Check that a book can be checked out from the library", () => {
   const Book3 = new Book("Fantasic Mr Fox", "Roald Dahl", 789)
   const Book4 = new Book("The Bible", "Moses", 744)
   const library = new Library ([Book1, Book2, Book3, Book4]);
-  library.checkoutBook(2, 1);
-  expect(library.books).toEqual([Book1, Book2, Book4]);
+  library.checkoutBook(2);
+  expect(library.books[2].available).toEqual(false);
 });

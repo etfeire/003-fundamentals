@@ -8,12 +8,14 @@ class Library {
   withdrawBook(index, num) {
     this.books.splice(index, num);
   }
-  checkoutBook(index, num) {
-    this.books.this.available(index, num)= false;
+  //to find index of a specific element var fruits = ["Banana", "Orange", "Apple", "Mango"];
+//var a = fruits.indexOf("Apple");
+
+  checkoutBook(index) {
+    this.books[index].available= false;
   }
 }
 
 module.exports = Library;
 
-//to find index of a specific element var fruits = ["Banana", "Orange", "Apple", "Mango"];
-//var a = fruits.indexOf("Apple");
+
